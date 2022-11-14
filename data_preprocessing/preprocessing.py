@@ -5,9 +5,7 @@ class Preprocessor:
     """
         This class shall  be used to clean and transform the data before training.
 
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
+        
 
         """
 
@@ -22,9 +20,7 @@ class Preprocessor:
                         Output: A pandas DataFrame after removing the spaces.
                         On Failure: Raise Exception
 
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
+                       
 
                 """
         self.logger_object.log(self.file_object, 'Entered the remove_unwanted_spaces method of the Preprocessor class')
@@ -51,9 +47,7 @@ class Preprocessor:
                 Output: A pandas DataFrame after removing the specified columns.
                 On Failure: Raise Exception
 
-                Written By: iNeuron Intelligence
-                Version: 1.0
-                Revisions: None
+            
 
         """
         self.logger_object.log(self.file_object, 'Entered the remove_columns method of the Preprocessor class')
@@ -77,9 +71,7 @@ class Preprocessor:
                         Output: Returns two separate Dataframes, one containing features and the other containing Labels .
                         On Failure: Raise Exception
 
-                        Written By: iNeuron Intelligence
-                        Version: 1.0
-                        Revisions: None
+                     
 
                 """
         self.logger_object.log(self.file_object, 'Entered the separate_label_feature method of the Preprocessor class')
@@ -102,10 +94,7 @@ class Preprocessor:
                                         returns the list of columns for which null values are present.
                                 On Failure: Raise Exception
 
-                                Written By: iNeuron Intelligence
-                                Version: 1.0
-                                Revisions: None
-
+                            
                         """
         self.logger_object.log(self.file_object, 'Entered the is_null_present method of the Preprocessor class')
         self.null_present = False
@@ -136,9 +125,6 @@ class Preprocessor:
                                         Output: A Dataframe which has all the missing values imputed.
                                         On Failure: Raise Exception
 
-                                        Written By: iNeuron Intelligence
-                                        Version: 1.0
-                                        Revisions: None
                      """
         self.logger_object.log(self.file_object, 'Entered the impute_missing_values method of the Preprocessor class')
         self.data= data
@@ -160,9 +146,7 @@ class Preprocessor:
                                                         Output: A dataframe with scaled
                                                         On Failure: Raise Exception
 
-                                                        Written By: iNeuron Intelligence
-                                                        Version: 1.0
-                                                        Revisions: None
+                                                       
                                      """
         self.logger_object.log(self.file_object,
                                'Entered the scale_numerical_columns method of the Preprocessor class')
@@ -190,9 +174,7 @@ class Preprocessor:
                                                 Output: only the columns with categorical values converted to numerical values
                                                 On Failure: Raise Exception
 
-                                                Written By: iNeuron Intelligence
-                                                Version: 1.0
-                                                Revisions: None
+                                              
                              """
         self.logger_object.log(self.file_object, 'Entered the encode_categorical_columns method of the Preprocessor class')
 
@@ -219,10 +201,7 @@ class Preprocessor:
         Output: new balanced feature and target columns
         On Failure: Raise Exception
 
-        Written By: iNeuron Intelligence
-        Version: 1.0
-        Revisions: None
-                                     """
+                    """
         self.logger_object.log(self.file_object,
                                'Entered the handle_imbalanced_dataset method of the Preprocessor class')
 
